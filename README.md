@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Objectif Grand Large
 
-## Getting Started
+![Objectif Grand Large Logo](./public/images/project.jpg)
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+"Objectif Grand Large" is a project aimed at supporting my brother-in-law, [Louis Claudepierre](https://www.instagram.com/louis_cpe?igsh=MTFqY2Q5MDk5ejFm), in his ambitious endeavor of crossing the Atlantic Ocean. This project involves creating a website to document his journey, showcase his preparations, and attract potential sponsors to support this challenging adventure.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Goals
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The main objectives of "Objectif Grand Large" are:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Supporting the Journey**: Providing a platform to share updates, stories, and progress throughout the preparation and execution of the Trans-Atlantic voyage.
+2. **Building Awareness**: Raising awareness about the journey, its challenges, and the determination required to undertake such a feat.
+3. **Finding Sponsors**: Attracting sponsors and partners who are willing to support financially or through provision of equipment and resources.
+4. **Inspiring Others**: Inspiring others to pursue their dreams and embark on their own adventures, no matter how daunting they may seem.
 
-## Learn More
+## How You Can Help
 
-To learn more about Next.js, take a look at the following resources:
+There are several ways you can contribute to the success of "Objectif Grand Large":
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Spread the Word**: Share the project with your friends, family, and network to increase visibility and support.
+2. **Sponsorship Opportunities**: If you or your company are interested in sponsoring the journey, please reach out to us through the contact information provided below.
+3. **Technical Support**: If you have expertise in web development, design, or any related field, your assistance in building and maintaining the [website](https://www.louis-claudepierre.fr/) would be greatly appreciated.
+4. **Encouragement**: Offer words of encouragement and moral support to Louis as he prepares for this incredible adventure.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact Information
 
-## Deploy on Vercel
+For inquiries, sponsorship opportunities, or to offer support, please contact:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[Louis Claudepierre](mailto:objectif.grand.large@gmail.com)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This project is licensed under the [MIT License]().
