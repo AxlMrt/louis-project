@@ -8,8 +8,12 @@ export default function Footer() {
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-sm text-gray-500 sm:text-center">
           © 2024{" "}
-          <a href="#" className="hover:underline">
-            Louis Claudepierre
+          <a
+            href="https://www.axel-martin.fr"
+            target="_blank"
+            className="hover:underline"
+          >
+            Axel Martin
           </a>
           . All Rights Reserved.
         </span>

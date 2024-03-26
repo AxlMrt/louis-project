@@ -5,12 +5,12 @@ const socialLinks = [
   {
     href: "https://www.instagram.com/louis_cpe?igsh=MTFqY2Q5MDk5ejFm",
     icon: FaInstagram,
-    color: "text-pink-400",
+    class: "text-gray-400 hover:text-pink-400",
   },
   {
     href: "https://youtube.com/@louis_cpe_?si=WTT-VokUzCxS7K3O",
     icon: TiSocialYoutubeCircular,
-    color: "text-red-500",
+    class: "cursor-pointer text-gray-400 hover:text-red-500",
   },
 ];
 
