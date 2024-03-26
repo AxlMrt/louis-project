@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
-export async function POST(request: NextRequest) {
+export async function POST(request: NextRequest, response: any) {
   const { email, name, message } = await request.json();
 
   const transport = nodemailer.createTransport({
@@ -21,15 +21,13 @@ export async function POST(request: NextRequest) {
     text: message,
   };
 
-  const sendMailPromise = () =>
-    new Promise<string>((resolve, reject) => {
-      transport.sendMail(mailOptions, function (err) {
-        if (!err) {
-          resolve("Votre Email a été envoyé !");
-        } else {
-          reject(err.message);
-        }
-      });
+  const sendMailPromise = async () =>
+    transport.sendMail(mailOptions, function (err) {
+      if (!err) {
+        response.status(205).json({ success: "Votre Email a été envoyé !" });
+      } else {
+        response.status(404).json(err.message);
+      }
     });
 
   try {

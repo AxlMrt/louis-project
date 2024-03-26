@@ -1,6 +1,6 @@
 import ContactMeFormData from "@/types/ContactMeFormType";
 import React, { useState } from "react";
-import { sendEmail } from "./SendMail";
+import { sendEmail } from "./send-mail";
 
 export default function ContactMeForm() {
   const [formData, setFormData] = useState<ContactMeFormData>({
