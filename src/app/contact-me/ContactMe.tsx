@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ContactSocialLinks from "../../components/Contact-Me/ContactSocialLinks";
 import { SlLocationPin } from "react-icons/sl";
