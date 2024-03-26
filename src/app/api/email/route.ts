@@ -1,8 +1,8 @@
-import { type NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
-export async function POST(request: NextRequest, response: any) {
+export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json();
 
   const transport = nodemailer.createTransport({
@@ -21,17 +21,17 @@ export async function POST(request: NextRequest, response: any) {
     text: message,
   };
 
-  const sendMailPromise = async () =>
-    transport.sendMail(mailOptions, function (err) {
-      if (!err) {
-        response.status(205).json({ success: "Votre Email a été envoyé !" });
-      } else {
-        response.status(404).json(err.message);
-      }
+  try {
+    await new Promise<string>((resolve, reject) => {
+      transport.sendMail(mailOptions, function (err) {
+        if (!err) {
+          resolve("Votre Email a été envoyé !");
+        } else {
+          reject(err.message);
+        }
+      });
     });
 
-  try {
-    await sendMailPromise();
     return NextResponse.json({ message: "Votre Email a été envoyé !" });
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });

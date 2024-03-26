@@ -1,9 +1,9 @@
 import ContactMeFormData from "@/types/ContactMeFormType";
 
-export async function sendEmail(data: ContactMeFormData) {
+export function sendEmail(data: ContactMeFormData) {
   const apiEndpoint = "/api/email";
 
-  await fetch(apiEndpoint, {
+  fetch(apiEndpoint, {
     method: "POST",
     body: JSON.stringify(data),
   })
