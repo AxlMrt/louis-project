@@ -8,6 +8,7 @@ export async function POST(request: NextRequest) {
 
   const transport = nodemailer.createTransport({
     service: "gmail",
+    host: "localhost",
     port: 465,
     auth: {
       user: process.env.MY_EMAIL,
