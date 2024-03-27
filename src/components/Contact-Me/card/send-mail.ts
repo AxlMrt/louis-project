@@ -2,7 +2,8 @@ import ContactMeFormData from "@/types/ContactMeFormType";
 import path from "path";
 
 export async function sendEmail(data: ContactMeFormData) {
-  const apiEndpoint = path.join(process.cwd(), "/api/email");
+  const apiEndpoint =
+    "https://louis-project-8fy6dkxc6-adotbits-projects.vercel.app/api/email";
 
   try {
     const response = await fetch(apiEndpoint, {
