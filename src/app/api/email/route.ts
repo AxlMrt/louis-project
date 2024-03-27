@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import Mail from "nodemailer/lib/mailer";
 
+export const dynamic = "force-dynamic";
 export async function POST(request: NextRequest) {
   "use server";
   const { email, name, message } = await request.json();
