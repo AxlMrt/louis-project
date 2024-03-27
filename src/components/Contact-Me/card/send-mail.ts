@@ -2,7 +2,7 @@ import ContactMeFormData from "@/types/ContactMeFormType";
 import path from "path";
 
 export async function sendEmail(data: ContactMeFormData) {
-  const apiEndpoint = path.join(process.cwd(), `/api/email`);
+  const apiEndpoint = path.join(process.cwd(), `../../../api/email`);
 
   try {
     const response = await fetch(apiEndpoint, {
