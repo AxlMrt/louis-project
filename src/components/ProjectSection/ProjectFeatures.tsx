@@ -26,7 +26,7 @@ export default function ProjectFeatures({
         alignRight ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
-      <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pl-6">
+      <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:px-6">
         <div
           className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
           data-te-ripple-init
@@ -37,7 +37,7 @@ export default function ProjectFeatures({
         </div>
       </div>
 
-      <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
+      <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:px-6">
         <h3 className="mb-4 text-2xl font-bold">{title}</h3>
         <div className="mb-4 flex items-center text-sm font-medium text-primary">
           {React.createElement(content.icon, { className: "mr-2" })}
