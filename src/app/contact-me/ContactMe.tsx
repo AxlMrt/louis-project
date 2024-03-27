@@ -7,6 +7,7 @@ import Image from "next/image";
 import PageRedirection from "@/components/PageRedirection/PageRedirection";
 import ContactMeTitle from "@/components/Contact-Me/ContactMeTitle";
 import ContactMeCard from "@/components/Contact-Me/card/ContactMeCard";
+import contactPhoto from "@/images/contact-me.jpg";
 
 export default function ContactMe() {
   return (
@@ -17,8 +18,8 @@ export default function ContactMe() {
 
         <Image
           className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96 mb-10"
-          src=""
-          alt=""
+          src={contactPhoto}
+          alt="photo du skipper"
         />
 
         <div className="lg:flex lg:items-center lg:-mx-6">
@@ -35,14 +36,6 @@ export default function ContactMe() {
 
                 <span className="mx-2 text-gray-700 truncate w-72 capitalize">
                   29940, la foret fouesnant
-                </span>
-              </p>
-
-              <p className="flex items-start -mx-2">
-                <MdOutlineLocalPhone size={25} className="mx-2" />
-
-                <span className="mx-2 text-gray-700 truncate w-72">
-                  (257) 563-7401
                 </span>
               </p>
 
