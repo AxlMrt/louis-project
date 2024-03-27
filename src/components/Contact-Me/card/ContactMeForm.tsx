@@ -16,9 +16,9 @@ export default function ContactMeForm() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    sendEmail(formData);
+    await sendEmail(formData);
   };
 
   return (
