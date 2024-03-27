@@ -7,12 +7,6 @@ const nextConfig = {
         destination: "/home",
         permanent: true,
       },
-      {
-        source: "/api/email",
-        destination:
-          "https://louis-project-8fy6dkxc6-adotbits-projects.vercel.app/",
-        permanent: true,
-      },
     ];
   },
 };
