@@ -25,7 +25,7 @@ const projects = [
     photo: boatImage,
     content: {
       icon: FaSailboat,
-      type: "Bateau",
+      type: "Mini 6.50",
       engagement: "Un engagement et des valeurs décuplés",
       paragraphs: [
         "Vainqueur de la Mini Transat 2001, le Pogo 1 n°237 est le mini idéal.",
