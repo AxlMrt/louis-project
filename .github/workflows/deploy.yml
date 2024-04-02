@@ -19,6 +19,7 @@ jobs:
       - name: 🔨 Build Project
         run: |
           npm install
+          npm i sharp
           npm run build
 
       - name: 📂 Sync files
