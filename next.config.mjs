@@ -8,7 +8,7 @@ const cspHeader = `
   style-src 'self' 'unsafe-inline';
   img-src 'self' blob: data: https://www.gstatic.com https://www.google.com;
   font-src 'self' https://fonts.gstatic.com;
-  media-src 'self' https://www.youtube.com https://youtu.be/;
+  media-src 'self' https://www.youtube.com https://youtu.be/ https://googleads.g.doubleclick.net/ https://static.doubleclick.net/;
   object-src 'none';
   base-uri 'self';
   form-action 'self';
