@@ -1,0 +1,6 @@
+.main-bg {
+  background-position: 50%;
+  background-image: url("../../../public/images/hero.png");
+  background-size: cover;
+  height: 100vh;
+}
